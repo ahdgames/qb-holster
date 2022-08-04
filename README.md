@@ -21,11 +21,13 @@
 [ps-progressbar](https://github.com/Project-Sloth/progressbar)
 
 # **Installation**
+## Go to `qb-small resources/client/weapdraw.lua` then set the same number as config to true
 Navigate to `/qb-inventory/html/images` and drag `holster.png` from [image folder](image/holster.png) to `/qb-inventory/html/images`
 ## **add in qb-core/shared/items.lua**
 ```lua
 ['holster']						 = {['name'] = 'holster', 						['label'] = 'Holster', 					['weight'] = 5, 		['type'] = 'item', 		['image'] = 'holster.png',		 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true, 	['combinable'] = nil,  ['description'] = 'An holster to quickly draw your handgun.'},
 
 ```
+
 
 # Feel free to fork and contribute with [Pull requests](https://github.com/YoungDev06/qb-holster/pulls)!
