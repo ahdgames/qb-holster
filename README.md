@@ -6,6 +6,7 @@
 - Holster as item
 - Customizable draw time
 
+## Previews
 
 [Without holster](https://streamable.com/d877wj)
 
