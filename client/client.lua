@@ -1,9 +1,10 @@
 local QBCore = exports['qb-core']:GetCoreObject()
+local PlayerData = QBCore.Functions.GetPlayerData()
 
 wearingHolster = false
 playerped = PlayerPedId()
 
-if IsPedMale then
+if PlayerData.charinfo.gender == 0 then
     male = true
 else
     male = false
@@ -17,7 +18,7 @@ RegisterNetEvent("qb-holster:client:updateHolster", function()
     end
 
     QBCore.Functions.Progressbar('holster', text, Config.HolsterTime, false, true, { -- Name | Label | Time | useWhileDead | canCancel
-        disableMovement = false,
+        disableMovement = true,
         disableCarMovement = true,
         disableMouse = false,
         disableCombat = true,
@@ -26,18 +27,20 @@ RegisterNetEvent("qb-holster:client:updateHolster", function()
         if not wearingHolster then
             wearingHolster = true
             TriggerEvent('weapons:ResetHolster')
-            if male then
-                SetPedComponentVariation(playerped, 7, Config.MaleWearingNumber, 0, 2)
+            if male == true then
+                SetPedComponentVariation(playerped, Config.MaleCategory, Config.MaleWearingNumber, 0, 0)
+                print('Male')
             else
-                SetPedComponentVariation(playerped, 7, Config.FemaleWearingNumber, 0, 2)
+                SetPedComponentVariation(playerped, Config.FemaleCategory, Config.FemaleWearingNumber, 0, 2)
+                print('Female')
             end
         else
             wearingHolster = false
             TriggerEvent('weapons:ResetHolster')
-            if male then
-                SetPedComponentVariation(playerped, 7, Config.MaleRemovedNumber, 0, 2)
+            if male == true then
+                SetPedComponentVariation(playerped, Config.MaleCategory, Config.MaleRemovedNumber, 0, 0)
             else
-                SetPedComponentVariation(playerped, 7, Config.FemaleRemovedNumber, 0, 2)
+                SetPedComponentVariation(playerped, Config.FemaleCategory, Config.FemaleRemovedNumber, 0, 2)
             end
         end
 
