@@ -23,6 +23,13 @@
 
 # **Installation**
 ## Go to `qb-small resources/client/weapdraw.lua` then set the same number as config to true
+```lua
+--Line ~150
+if HolsterVariant == 130 then --Replace to match config
+    WearingHolster = true
+elseif HolsterVariant == 160 then --Replace to match config
+	WearingHolster = true
+end
 Navigate to `/qb-inventory/html/images` and drag `holster.png` from [image folder](image/holster.png) to `/qb-inventory/html/images`
 ## **add in qb-core/shared/items.lua**
 ```lua
