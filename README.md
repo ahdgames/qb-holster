@@ -1,21 +1,19 @@
 # qb-holster
  QB-Core holster script that let you wear and remove holster to quickly draw a gun
 
-#Features
+# Features
 - Quickly wear and remove holster
 - Holster as item
 - Customizable draw time
 
-##Without holster
-![Without holster](https://streamable.com/d877wj)
 
-##Using holster
-![Using holster](https://streamable.com/ovu3h9)
+[Without holster](https://streamable.com/d877wj)
 
-##With holster
-![With holster](https://streamable.com/tu7ln2)
+[Using holster](https://streamable.com/ovu3h9)
+
+[With holster](https://streamable.com/tu7ln2)
  
-##Dependencies:
+## Dependencies:
 
 [qb-core](https://github.com/qbcore-framework/qb-core)
 
