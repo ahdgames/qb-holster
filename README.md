@@ -22,9 +22,9 @@
     [ps-progressbar](https://github.com/Project-Sloth/progressbar)
 
 # **Installation**
-    Navigate to `/qb-inventory/html/images` and drag `holster.png` from [image folder](image/holster.png) to `/qb-inventory/html/images`
-    ## **add in qb-core/shared/items.lua**
-    ```lua
-    ['holster']						 = {['name'] = 'holster', 						['label'] = 'Holster', 					['weight'] = 5, 		['type'] = 'item', 		['image'] = 'holster.png',		 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true, 	['combinable'] = nil,  ['description'] = 'An holster to quickly draw your handgun.'},
+Navigate to `/qb-inventory/html/images` and drag `holster.png` from [image folder](image/holster.png) to `/qb-inventory/html/images`
+## **add in qb-core/shared/items.lua**
+```lua
+['holster']						 = {['name'] = 'holster', 						['label'] = 'Holster', 					['weight'] = 5, 		['type'] = 'item', 		['image'] = 'holster.png',		 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true, 	['combinable'] = nil,  ['description'] = 'An holster to quickly draw your handgun.'},
 
-    ```
+```
