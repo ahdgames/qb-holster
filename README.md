@@ -25,6 +25,7 @@
 ## Go to `qb-small resources/client/weapdraw.lua` then set the same number as config to true
 ```lua
 --Line ~150
+local HolsterVariant = GetPedDrawableVariation(ped, 8) --Replace with category number
 if HolsterVariant == 130 then --Replace to match config
     WearingHolster = true
 elseif HolsterVariant == 160 then --Replace to match config
