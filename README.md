@@ -3,7 +3,7 @@
  
 **Dependencies:**
 qb-core
-ps-progressbar
+ps-progressbar https://github.com/Project-Sloth/progressbar
 
 **Installation**
 ## **add in qb-core/shared/items.lua**
