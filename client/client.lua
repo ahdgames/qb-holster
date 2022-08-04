@@ -29,10 +29,8 @@ RegisterNetEvent("qb-holster:client:updateHolster", function()
             TriggerEvent('weapons:ResetHolster')
             if male == true then
                 SetPedComponentVariation(playerped, Config.MaleCategory, Config.MaleWearingNumber, 0, 0)
-                print('Male')
             else
                 SetPedComponentVariation(playerped, Config.FemaleCategory, Config.FemaleWearingNumber, 0, 2)
-                print('Female')
             end
         else
             wearingHolster = false
