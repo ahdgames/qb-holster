@@ -5,6 +5,15 @@
  - Quickly wear and remove holster
  - Holster as item
  - Customizable draw time
+
+ ##Without holster
+ [Without holster](https://streamable.com/d877wj)
+
+ ##Using holster
+ [Using holster](https://streamable.com/ovu3h9)
+
+ ##With holster
+[With holster](https://streamable.com/tu7ln2)
  
 **Dependencies:**
 
