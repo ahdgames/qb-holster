@@ -5,6 +5,7 @@
 - Quickly wear and remove holster
 - Holster as item
 - Customizable draw time
+- Offer support via issues and discord :3
 
 ## Previews
 
