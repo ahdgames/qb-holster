@@ -6,6 +6,7 @@
 - Holster as item
 - Customizable draw time
 - Offer support via issues and discord :3
+- __Little Axolotl#8285__
 
 ## Previews
 
@@ -19,7 +20,7 @@
 
 [qb-core](https://github.com/qbcore-framework/qb-core)
 
-[ps-progressbar](https://github.com/Project-Sloth/progressbar)
+[ps-progressbar (OPTIONAL)](https://github.com/Project-Sloth/progressbar)
 
 # **Installation**
 ## Go to `qb-small resources/client/weapdraw.lua` then set the same number as config to true

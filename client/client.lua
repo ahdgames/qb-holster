@@ -36,14 +36,19 @@ RegisterNetEvent("qb-holster:client:updateHolster", function()
     else
         text = "Removing Holster"
     end
-
-    QBCore.Functions.Progressbar('holster', text, Config.HolsterTime, false, true, { -- Name | Label | Time | useWhileDead | canCancel
-        disableMovement = true,
-        disableCarMovement = true,
-        disableMouse = false,
-        disableCombat = true,
-    }, {}, {}, {}, toggle() -- Play When Done
-    end, function() -- Play When Cancel
-        --Stuff goes here
-    end)
+    if Config.UsingPsProgressBar then
+        QBCore.Functions.Progressbar('holster', text, Config.HolsterTime, false, true, { -- Name | Label | Time | useWhileDead | canCancel
+            disableMovement = true,
+            disableCarMovement = true,
+            disableMouse = false,
+            disableCombat = true,
+        }, {}, {}, {}, function() -- Play When Done
+            toggle()
+        end, function() -- Play When Cancel
+            --Stuff goes here
+        end)
+    else
+        Citizen.Wait(Config.HolsterTime)
+        toggle()
+    end
 end)
