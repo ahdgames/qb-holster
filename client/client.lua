@@ -10,6 +10,26 @@ else
     male = false
 end
 
+function toggle()
+    if not wearingHolster then
+        wearingHolster = true
+        TriggerEvent('weapons:ResetHolster')
+        if male == true then
+            SetPedComponentVariation(playerped, Config.MaleCategory, Config.MaleWearingNumber, 0, 0)
+        else
+            SetPedComponentVariation(playerped, Config.FemaleCategory, Config.FemaleWearingNumber, 0, 2)
+        end
+    else
+        wearingHolster = false
+        TriggerEvent('weapons:ResetHolster')
+        if male == true then
+            SetPedComponentVariation(playerped, Config.MaleCategory, Config.MaleRemovedNumber, 0, 0)
+        else
+            SetPedComponentVariation(playerped, Config.FemaleCategory, Config.FemaleRemovedNumber, 0, 2)
+        end
+    end
+end
+
 RegisterNetEvent("qb-holster:client:updateHolster", function()
     if not wearingHolster then
         text = "Putting on Holster"
@@ -22,26 +42,7 @@ RegisterNetEvent("qb-holster:client:updateHolster", function()
         disableCarMovement = true,
         disableMouse = false,
         disableCombat = true,
-    }, {}, {}, {}, function() -- Play When Done
-
-        if not wearingHolster then
-            wearingHolster = true
-            TriggerEvent('weapons:ResetHolster')
-            if male == true then
-                SetPedComponentVariation(playerped, Config.MaleCategory, Config.MaleWearingNumber, 0, 0)
-            else
-                SetPedComponentVariation(playerped, Config.FemaleCategory, Config.FemaleWearingNumber, 0, 2)
-            end
-        else
-            wearingHolster = false
-            TriggerEvent('weapons:ResetHolster')
-            if male == true then
-                SetPedComponentVariation(playerped, Config.MaleCategory, Config.MaleRemovedNumber, 0, 0)
-            else
-                SetPedComponentVariation(playerped, Config.FemaleCategory, Config.FemaleRemovedNumber, 0, 2)
-            end
-        end
-
+    }, {}, {}, {}, toggle() -- Play When Done
     end, function() -- Play When Cancel
         --Stuff goes here
     end)
