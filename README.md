@@ -31,6 +31,8 @@ if HolsterVariant == 130 then --Replace to match config
 elseif HolsterVariant == 160 then --Replace to match config
 	WearingHolster = true
 end
+```
+
 Navigate to `/qb-inventory/html/images` and drag `holster.png` from [image folder](image/holster.png) to `/qb-inventory/html/images`
 ## **add in qb-core/shared/items.lua**
 ```lua
