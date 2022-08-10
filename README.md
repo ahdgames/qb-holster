@@ -5,7 +5,7 @@
 - Quickly wear and remove holster
 - Holster as item
 - Customizable draw time
-- Offer support via issues and discord :3
+- Offer support via issues and discord (Know atleast the basis of fivem and scripts)
 - __Little Axolotl#8285__
 
 ## Previews
