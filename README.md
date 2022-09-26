@@ -6,7 +6,7 @@
 - Holster as item
 - Customizable draw time
 - Offer support via issues and discord (Know atleast the basis of fivem and scripts)
-- __Little Axolotl#8285__
+- __Little Axolotl#3953__
 
 ## Previews
 
